@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+	
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<style> 
+ body{
+   background:url("image2/88062650_p0.jpg")  no-repeat center center;   /*加载背景图*/   /* 背景图不平铺 */
+   background-size:cover;  /* 让背景图基于容器大小伸缩 */
+   background-attachment:fixed;        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */    //此条属性必须设置否则可能无效/
+   background-color:#CCCCCC;   /* 设置背景颜色，背景图加载过程中会显示背景色 */
+ }
+</style>
+
+<style>
+	.con {
+    position: relative;
+}
+.nav > li {
+    display: inline;
+    float:left;
+}
+.nav li a {
+    color: #FFFF0F;
+    display: block;
+    line-height: 20px;
+    padding: 15px 30px 15px 180px;
+}
+.con:hover {
+    cursor: pointer;
+}
+.con:hover .con-box{
+     transform: translateZ(-25px) rotateX(90deg);
+}
+.con-box {
+     transition: all .3s ease-out;
+    transform: translatez(-25px);
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.cont {
+    transform: rotatex(0deg) translatez(25px);
+}
+.back {
+    transform: rotatex(-90deg) translatez(25px);
+    color: #BD06DE;
+}
+.cont, .back {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2B98EF;  
+    padding: 15px 30px 15px 31px;
+    color: white;
+    box-sizing: border-box;
+}
+.nav li a:hover .cont,  
+.nav li a:hover .back {
+    background-color: #05F3FF;
+}
+
+	</style>
+ <style>
+.p {
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana, sans-serif;
+}
+		body{ background-color:#c28889;}
+	.lanren{width:1000px;overflow:hidden;margin:0 auto;}
+	.flip-3d { 
+	  perspective: 1200px; width: 33%; float: left;  
+	}
+	.flip-3d figure { 
+	  position: relative; 
+	  transform-style: preserve-3d; 
+	  transition: 1s transform;
+	  font-size: 1.6rem;
+	  margin:25px;
+	}
+	.flip-3d figure img { 
+	  width: 100%; height: auto; 
+	}
+	.flip-3d figure figcaption { 
+	  position: absolute; 
+	  width: 100%; height: 100%; top: 0; 
+	  transform: rotateY(.5turn) translateZ(1px); 
+	  background: rgba(255,255,255,0.9); 
+	  text-align: center; 
+	  padding-top: 5%; 
+	  opacity: 0.6; 
+	  transition: 1s .5s opacity; 
+	}
+	.flip-3d:hover figure { transform: rotateY(.5turn); }
+	.flip-3d:hover figure figcaption { opacity: 1; }
+	.flip-3d figure:after { 
+	  content: " "; display: block;
+	  height: 8vw; width: 100%; 
+	  transform: rotateX(90deg); 
+	  background-image:radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); 
+	}
+	@media screen and (max-width: 800px) { 
+	  #flip-3d { perspective-origin: center top; }
+		div#flip-3d figure { 
+	    float: none; 
+	    width: 50%; 
+	    margin: 0 auto; 
+	    margin-bottom: 12vw; 
+	  }
+	 .flip-3d figure figcaption{font-size: 0.8rem;}
+		div#flip-3d figure:last-child { display: none; }
+	}
+	
+	</style>
+<body>
+	
+<div>	
+ <ul class="nav">
+    <li><a href="index.html" class="con"> odddd <span class="con-box"><span class="cont">杨阳的首页</span><span class="back">回去啦</span>
+    </span> </a></li>
+    <li><a href="part2.html" class="con"> two <span class="con-box"><span class="cont">游戏爱好</span><span class="back">折磨</span></span> </a></li>
+    <li><a href="part3.html" class="con"> tree <span class="con-box"><span class="cont">插画收藏</span><span class="back">xp大赏</span></span> </a></li>
+    <li><a href="part4.html" class="con"> free <span class="con-box"><span class="cont">热爱的故乡</span><span class="back">我想回家</span></span> </a></li>
+    <li><a href="part5.html" class="con"> five <span class="con-box"><span class="cont">欢迎联系开黑</span><span class="back">开摆！</span></span> </a></li>
+  </ul>
+</div>
+<div class="flip-3d">
+			<figure>
+	    	  <img src="image2/86446119_p0.jpg" alt="">
+		    	<figcaption>Apex<br>
+					<br>
+					这个就不多说了
+					<br><br>
+					坐牢模拟器
+				
+				
+				</figcaption>
+		  	</figure>
+		</div>
+<div class="flip-3d">
+			<figure>
+	    	  <img src="image2/v2-772cae65e8ced9907b30cb6c18d0b306_1440w.jpg" alt="">
+		    	<figcaption>彩虹六号<br>
+					<br>
+					<br>
+				我fuze今天来救美少女啦
+				
+				</figcaption>
+		  	</figure>
+		</div>
+<div class="flip-3d">
+			<figure>
+	    	  <img src="image2/69620087_p0.png" alt="">
+		    	<figcaption>bf1（对就是男朋友1）<br><br>
+					《战地1》是一款由EA DICE开发、Electronic Arts发行的一款第一人称射击类游戏，于2016年10月21日发行。
+游戏设定在第一次世界大战中，游戏中包含了很多系列元素的回归，比如马、火焰喷射器、双翼飞机和齐柏林飞艇。
+需要注意的是，该作为何称做“战地1”而非“战地5”因为此作的内容设定在了第一次世界大战且战地系列第一部并非称做“战地1”而称做“战地1942”，所以此作称为“战地1”。
+				</figcaption>
+		  	</figure>
+		</div>
+<div class="flip-3d">
+			<figure>
+	    	  <img src="image2/72465466_p0.jpg" alt="">
+		    	<figcaption>命运2
+					<br>
+					<br>
+					狗都不玩（其实1000小时+）
+					<br>
+					<br>
+					呜呜呜我的凯德
+					</figcaption>
+		  	</figure>
+		</div>
+</body>
+</html>
